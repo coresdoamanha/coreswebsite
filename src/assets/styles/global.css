@@ -1,0 +1,23 @@
+:root {
+    --background: #FFFFFF;
+    --background-light: #EBF5FF;
+    --background-footer: #525252;
+    --background-dark: #478FD3;
+    --background-nav: #F4F1F6;
+    --card-purple: #5E2590;
+    --card-yellow: #FBC707;
+    --card-green: #80CC28;
+    --card-red: #EF2E32;
+    --card-orange: #F9A72B;
+    --background-item: #9CCFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* ::-webkit-scrollbar {
+    width: 0;
+}

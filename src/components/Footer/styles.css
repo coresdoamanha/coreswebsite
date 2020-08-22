@@ -1,0 +1,71 @@
+footer {
+    padding: 4.375rem 8.688rem;
+    width: 100%;
+    color: var(--background);
+    background: var(--background-footer);
+}
+
+footer .grid-area {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .grid-area .logo-area img {
+    height: 7.313rem;
+}
+
+footer .grid-area .pages-area, .media-area {
+    font: 400 1rem Nunito;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+footer .grid-area .pages-area a {
+    text-decoration: none;
+    padding: 1.875rem 0 0 0;
+    color: var(--background);
+}
+
+footer .grid-area .media-area a {
+    text-decoration: none;
+    padding: 0 0 1.875rem 0;
+    color: var(--background);
+}
+
+footer .grid-area .media-area .social-area {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .grid-area .media-area .social-area a {
+    justify-content: center;
+    padding: 0;
+}
+
+footer .grid-area .media-area .social-area img {
+    height: 1.375rem;
+}
+
+footer .grid-area .account-area {
+    width: 80%;
+    border: 2px solid var(--background);
+    font: 800 1.2rem Nunito;
+}
+
+footer .grid-area .account-area p {
+    width: 100%;
+    text-align: center;
+    padding: 0.2rem;
+}
+
+footer .grid-area .address-area p {
+    font: 400 1rem Nunito;
+    text-align: right;
+}
+
+footer .dev-area {
+    padding: 4.375rem 0 0 0;
+    font: 400 0.875rem Nunito;
+    text-align: center;
+}
