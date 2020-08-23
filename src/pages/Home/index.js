@@ -7,6 +7,7 @@ import heart from '../../assets/img/icons/heart.svg';
 import paintbrush from '../../assets/img/icons/paint-brush.svg';
 import music from '../../assets/img/icons/music.svg';
 import './styles.css';
+import teste from '../../assets/img/teste.png';
 
 function Home() {
     return (
@@ -43,6 +44,41 @@ function Home() {
                 <div className="button-area">
                     <Button path="/about" title="Saiba mais sobre nossa história" />
                 </div>
+            </div>
+            <div className="projects-home">
+                <div className="row">
+                    <div>
+                        <h3>Cores Femininas</h3>
+                        <p>Breve texto sobre o cores femininas</p>
+                        <div className="button-area">
+                            <Button path="/" title="Conheça o Projeto"/>
+                        </div>   
+                    </div>
+                    <div>
+                        <img src={teste} alt="teste" />
+                    </div>
+                    <div>
+                        <img src={teste} alt="teste" />
+                    </div>
+                </div>
+                <div className="row">
+                    <div>
+                        <img src={teste} alt="teste" />
+                    </div>
+                    <div>
+                        <img src={teste} alt="teste" />
+                    </div>
+                    <div>
+                        <h3>Cores Sonoras</h3>
+                        <p>Breve texto sobre o cores sonoras</p>
+                        <div className="button-area">
+                            <Button path="/" title="Conheça o Projeto"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="video-area">
+                <h2>Quer conhecer mais detalhes da história do Cores? Assista ao vídeo abaixo! &#10084;</h2>
             </div>
             <Footer></Footer>
         </div>
