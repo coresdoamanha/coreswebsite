@@ -1,4 +1,116 @@
 .about {
-    background: url('../../assets/img/banner_about.png');
+    background: url('./img/banner_about.png');
     background-size: cover;
+}
+
+.historia {
+    padding: 3rem 14rem 4.3rem;
+    font: 400 1.25rem Nunito;
+    text-align: justify;
+}
+
+.historia p + p {
+    margin-top: 1.5rem;
+}
+
+.valores {
+    background: var(--background-light);
+    padding: 3rem 8.6rem;
+    font: 400 1.25rem Nunito;
+    text-align: justify;
+    color: var(--background-footer);
+}
+
+.valores .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.valores .row + .row {
+    margin: 1.8rem;
+}
+
+.valores .row div {
+    max-width: 350px;
+    margin: auto;
+}
+
+.equipe h3{
+    font: 800 1.8rem Nunito;
+    text-align: center;
+    margin: 3.1rem 0 1.8rem;
+    color: var(--background-footer);
+}
+
+.equipe p{
+    font: 400 1.25rem Nunito;
+    padding: 0 15rem 1.8rem;
+    text-align: center;
+    color: var(--background-footer);
+}
+
+.equipe .equipe-back {
+    background: url('./img/equipe.png');
+    background-size: cover;
+    height: 22.813rem;
+}
+
+.equipe .equipe-back .button-area-about {
+    width: 100%;
+    display: flex;
+    padding: 16rem 0 0;
+    justify-content: center;
+}
+
+.grid-area-about {
+    padding: 0 8.75rem 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+}
+
+.grid-area-about .column-area {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 1rem;
+    margin: auto;
+}
+
+.grid-area-about ul li {
+    font: 400 1.25rem Nunito;
+    color: var(--background-footer);
+    list-style-position: inside;
+}
+
+.premios h3 {
+    padding: 4.3rem 0 1.8rem;
+    font: 700 1.8rem Nunito;
+    text-align: center;
+    color: var(--background-footer);
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 260px 260px 536px;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+.first, .second, .third {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+}
+
+.fourth {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.segundo {
+    padding: 1.8rem 0 6rem;
+    display: flex;
+    justify-content: center;
 }

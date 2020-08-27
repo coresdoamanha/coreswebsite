@@ -1,4 +1,66 @@
 .projects {
-    background: url('../../assets/img/banner_projects.png');
+    background: url('./img/banner_projects.png');
     background-size: cover;
+}
+
+.historia ul {
+    padding: 1rem 0 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.historia ul li {
+    text-align: center;
+    list-style: none;
+}
+
+.projproj {
+    background: var(--background-light);
+    padding: 0 8.6rem 3.1rem;
+}
+
+.grid-proj {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+}
+
+.grid-proj + .grid-proj{
+    margin-top: 1.8rem;
+}
+
+.projimg {
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+}
+
+.projproj h3 {
+    font: 700 1.8rem Nunito;
+    color: var(--background-footer);
+    padding: 3.125rem 0;
+    text-align: center;
+}
+
+.projproj h2 {
+    font: 700 1.8rem Nunito;
+    color: var(--background-footer);
+    padding: 0 0 0 1rem;
+}
+
+.grid-proj p {
+    font: 400 1.125rem Nunito;
+    color: var(--background-footer);
+    text-align: justify;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.pageproj {
+    padding-bottom: 6.8rem;
+}
+
+.textpart {
+    margin: auto;
 }

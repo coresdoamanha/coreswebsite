@@ -2,3 +2,59 @@
     background: url('../../assets/img/banner_midia.png');
     background-size: cover;
 }
+
+.videoarea {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.videoarea h4 {
+    font: 400 1.25rem Nunito;
+    text-align: center;
+    padding: 3.1rem 4.3rem 0;
+}
+
+.videoarea iframe {
+    padding: 3rem 0 0 0;
+    display: flex;
+    width: 53rem;
+    height: 30rem;
+    margin: auto;
+}
+
+.imagearea {
+    padding: 4.3rem 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 1rem;
+    justify-content: center;
+}
+
+.socialmediaarea {
+    background: var(--background-light);
+    padding-bottom: 6.8rem;
+}
+
+.socialmediaarea h3 {
+    font: 700 2.2rem Nunito;
+    color: var(--background-footer);
+    text-align: center;
+    padding: 3.1rem 10rem 1.8rem;
+    justify-content: center;
+}
+
+.socialmediaarea .socialmedia {
+    display: grid;
+    grid-template-columns: 6.25rem 6.25rem 6.25rem;
+    column-gap: 3.2rem;
+    justify-content: center;
+}
+
+.socialmediaarea .socialmedia a {
+    margin: auto;
+}
+
+.socialmediaarea .socialmedia img {
+    width: 3.5rem;
+}
