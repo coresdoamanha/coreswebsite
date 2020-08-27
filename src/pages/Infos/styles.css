@@ -121,11 +121,67 @@
     justify-content: center;
 }
 
+.ultima .cardimage + .cardimage {
+    margin-top: 4.3rem;
+}
+
 .ultima .cardimage h2 {
-    font: 800 2.1rem Nunito;
+    font: 800 1.8rem Nunito;
+    margin-bottom: 1rem;
+    padding: 0 1rem 0;
 }
 
 .ultima .cardimage p {
-    font: 400 1.25rem Nunito;
+    font: 400 1.1rem Nunito;
     color: var(--background-footer);
+    text-align: justify;
+    padding: 0 1rem 0;
+}
+
+.ultima .cardimage a {
+    display: table;
+    margin: 1rem auto 0;
+    justify-content: center;
+}
+
+.ultima .orange h2 {
+    color: var(--card-orange);
+    text-align: right;
+}
+
+.ultima .orange a {
+    background: var(--card-orange);
+}
+
+.ultima .purple h2 {
+    color: var(--card-purple);
+}
+
+.ultima .purple a {
+    background: var(--card-purple);
+}
+
+.ultima .green h2 {
+    color: var(--card-green);
+    text-align: right;
+}
+
+.ultima .green a {
+    background: var(--card-green);
+}
+
+.ultima .red h2 {
+    color: var(--card-red);
+}
+
+.ultima .red a {
+    background: var(--card-red);
+}
+
+.ultima .yellow h2 {
+    color: var(--card-yellow);
+}
+
+.ultima .yellow a {
+    background: var(--card-yellow);
 }
