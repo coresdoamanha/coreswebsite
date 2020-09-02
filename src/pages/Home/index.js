@@ -1,5 +1,4 @@
 import React from 'react';
-import InstagramEmbed from 'react-instagram-embed';
 import Header from '../../components/Header';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
