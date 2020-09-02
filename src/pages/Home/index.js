@@ -118,17 +118,6 @@ function Home() {
                     <p>Faça sua doação ou <Link to="/infos">clique aqui</Link> para conhecer diversas formas de colaborar com o Cores!</p>
                 </div>
             </div>
-            <div className="instagram">
-                <div className="row">
-                    <InstagramEmbed url={'https://www.instagram.com/p/CEU4XWJnVQZ/'} maxWidth={320} hideCaption={true} />
-                </div>
-                <div className="row">
-                    <InstagramEmbed url={'https://www.instagram.com/p/CEUvT-Un1-B/'} maxWidth={320} hideCaption={true} />
-                </div>
-                <div className="row">
-                    <InstagramEmbed url={'https://www.instagram.com/p/CEUutFEny2b/'} maxWidth={320} hideCaption={true} />
-                </div>
-            </div>
             <Footer></Footer>
         </div>
     );
