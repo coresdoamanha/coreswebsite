@@ -1,27 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logoCores from '../../assets/img/logo.png';
+import logoCores from '../../assets/img/logocores2x.png';
 import facebook from '../../assets/img/icons/facebook.svg';
 import youtube from '../../assets/img/icons/youtube.svg';
 import instagram from '../../assets/img/icons/instagram.svg';
+import bars from '../../assets/img/icons/bars.svg';
 import './styles.css';
 
 function Navbar(){
     return(
-        <nav>
-            <div className="logo-area">
+        <nav className="navigation">
+            <div className="logocolumn">
                 <Link to="/">
                     <img src={logoCores} alt="Logo da ONG Cores do Amanhã. Arco-íris colorido com a frase Cores do Amanhã embaixo." />
                 </Link>
             </div>
-            <div className="nav-area">
-                <Link to="about">Sobre nós</Link>
-                <Link to="/projects">Projetos</Link>
-                <Link to="infos">Como ajudar</Link>
-                <Link to="/contact">Contato</Link>
-                <Link to="/social">Na mídia</Link>
+            <div className="pagecolumn">
+                <Link to="/sobre-nos">Sobre nós</Link>
+                <Link to="/projetos">Projetos</Link>
+                <Link to="/como-ajudar">Como ajudar</Link>
+                <Link to="/contato">Contato</Link>
+                <Link to="/na-media">Na mídia</Link>
             </div>
-            <div className="social-area">
+            <div className="smcolumn">
                 <a href="https://www.instagram.com/coresdoamanha/">
                     <img src={instagram} alt="Logo da rede social Instagram" />
                 </a>
@@ -31,6 +32,11 @@ function Navbar(){
                 <a href="https://www.youtube.com/user/coresdoamanha">
                     <img src={youtube} alt="Logo da rede social Youtube" />
                 </a>
+            </div>
+            <div className="menubar">
+                <div className="menuicon">
+                    <img src={bars} alt="Ícone de MenuBar"/>
+                </div>
             </div>
         </nav>
     );

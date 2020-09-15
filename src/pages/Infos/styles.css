@@ -1,187 +1,196 @@
-.infos {
-    background: url('../../assets/img/banner_infos.png');
+.infos .infosbg .header .content {
+    background: url('./img/cores_como-ajudar_banner.png');
+    background: url('./img/cores_como-ajudar_banner@2x.png');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.howtohelp {
-    padding: 3.1rem 8rem 1.8rem;
-    font: 400 1.3rem Nunito;
+.infos .howtohelp {
+    padding: 1.25rem 2.313rem;
+    justify-content: center;
+    color: var(--footer-color);
+}
+
+.infos .howtohelp p {
+    max-width: 56rem;
+    text-align: justify;
+}
+
+.infos .howtohelp h2 {
+    color: var(--purple);
+    padding-bottom: 0.625rem;
     text-align: center;
-    color: var(--background-footer);
 }
 
-.howhelp {
-    padding-top: 1.8rem;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    column-gap: 5.6rem;
-}
-
-.howhelp div {
-    max-width: 130px;
-    margin: 0 auto 0;
-}
-
-.howhelp p {
-    padding-top: 1rem;
-    text-align: center;
-    font: 800 1.3rem Nunito;
-}
-
-.howhelp .boxopen p {
-    color: var(--card-purple);
-}
-
-.howhelp .handshelping p {
-    color: var(--card-red);
-}
-
-.howhelp .handheart p {
-    color: var(--card-green);
-}
-
-.howhelp .paintbrush p {
-    color: var(--card-orange);
-}
-
-.howhelp .palette p {
-    color: var(--card-yellow);
-}
-
-.howtohelp h3 {
-    font: 800 2.3rem Nunito;
-    color: var(--card-purple);
-    padding: 4.3rem 0 1.8rem;
-}
-
-.donation-area {
-    font: 700 1.2rem Nunito;
-    padding: 0 5rem 0;
-    color: var(--background);
-    background: var(--background-dark);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 1rem;
-}
-
-.donation-area .element {
-    text-align: center;
-    max-width: 400px;
-}
-
-.donation-area .back {
-    margin: auto;
-}
-
-.donation-area .purple {
-    width: 100%;
-    background: var(--card-purple);
-    padding: 1.8rem 2rem 2rem;
+.infos .howtohelp .cards {
+    justify-content: center;
+    margin: 1.875rem auto 2.5rem;
     display: flex;
+    flex-wrap: wrap;
+}
+
+.infos .howtohelp .cards div, .infos .howtohelp .cards img, .infos .howtohelp .cards p {
+    width: 100%;
+    max-width: 5.313rem;
+}
+
+.infos .howtohelp .cards div {
+    margin: 0 1rem 1rem 0;
     justify-content: center;
 }
 
-.donation-area .purple p {
-    margin-bottom: 1rem;
+.infos .howtohelp .cards p {
+    font-size: 0.875rem;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 0.625rem;
 }
 
-.donation-area .element a {
-    font: 700 1.5rem Nunito;
-    margin-top: 5rem;
+.infos .howtohelp .cards .boxopen {
+    color: var(--purple);
+}
+
+.infos .howtohelp .cards .handshelping {
+    color: var(--red);
+}
+
+.infos .howtohelp .cards .handheart {
+    color: var(--green);
+}
+
+.infos .howtohelp .cards .paintbrush {
+    color: var(--orange);
+}
+
+.infos .howtohelp .cards .palette {
+    color: var(--yellow);
+}
+
+.infos .donation {
+    display: grid;
+    grid-template-columns: 100%;
+    background: var(--background-dark);
+    justify-content: center;
+    color: var(--text-color);
+}
+
+.infos .donation .element {
+    padding: 1.25rem 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.infos .donation .element p {
+    font-weight: 700;
+}
+
+.infos .donation .element:nth-child(1) div {
+    max-width: 10rem;
+    padding: 1.25rem;
+    margin: auto;
+    border: 2px solid var(--text-color);
+}
+
+.infos .donation .element:nth-child(2) {
+    background: var(--purple);
+}
+
+.infos .donation .element:nth-child(2) p {
+    padding: 0 1rem 0;
+}
+
+.infos .donation .element:nth-child(3) div {
+    margin: 1.55rem auto 2.3rem;
+}
+
+.infos .donation .element img {
+    margin-top: 0.625rem;
+    width: 100%;
+    max-width: 8.563rem;
+}
+
+.infos .donation .element div .button {
     text-decoration: none;
     color: var(--background-dark);
-    background-color: var(--background);
+    background-color: var(--text-color);
     padding: 0.75rem 2rem;
-    border-radius: 1.7rem;
+    border-radius: 25px;
     text-align: center;
+    transition: 0.5s;
+    display: inline-flex;
     align-items: center;
 }
 
-.comoajudar img {
+.infos .donation .element div .button img {
+    width: 0.813rem;
+    margin: 0 0 0 0.4rem;
+}
+
+.infos .infoimage {
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: 13.125rem;
+    background: url('./img/cores_como-ajudar_doacao.png');
+    background: url('./img/cores_como-ajudar_doacao@2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.ultima {
-    padding: 4.3rem 10rem 6.8rem;
+.infos .help {
+    padding: 2.5rem 0 5rem;
+    color: var(--footer-color);
+    justify-content: center;
 }
 
-.ultima h3 {
-    font: 800 2.1rem Nunito;
-    color: var(--background-dark);
+.infos .help h2 {
+    padding-bottom: 2.5rem;
     text-align: center;
-    margin-bottom: 3.1rem;
 }
 
-.ultima .cardimage {
+.infos .help .card {
     display: grid;
-    grid-template-columns: 33rem 33rem;
-    column-gap: 1rem;
+    row-gap: 1.25rem;
     justify-content: center;
 }
 
-.ultima .cardimage + .cardimage {
-    margin-top: 4.3rem;
+.infos .help .card div {
+    margin: auto;
+    display: grid;
+    justify-content: center;
 }
 
-.ultima .cardimage h2 {
-    font: 800 1.8rem Nunito;
-    margin-bottom: 1rem;
-    padding: 0 1rem 0;
+.infos .help .card div img {
+    width: 100%;
+    max-width: 33.5rem;
 }
 
-.ultima .cardimage p {
-    font: 400 1.1rem Nunito;
-    color: var(--background-footer);
+.infos .help .card div h3 {
+    padding-bottom: 0.625rem;
+    text-align: center;
+}
+
+.infos .help .card div p {
+    padding-bottom: 1.25rem;
     text-align: justify;
-    padding: 0 1rem 0;
+    margin: 0 2.313rem 0;
 }
 
-.ultima .cardimage a {
-    display: table;
-    margin: 1rem auto 0;
-    justify-content: center;
+.infos .help:nth-of-type(even){
+    display: grid;
+    grid-template-areas: "a" "b";
 }
 
-.ultima .orange h2 {
-    color: var(--card-orange);
-    text-align: right;
+.infos .help:nth-of-type(even) div {
+    grid-area: b;
 }
 
-.ultima .orange a {
-    background: var(--card-orange);
+.infos .help:nth-of-type(even) div + div {
+    grid-area: a;
 }
 
-.ultima .purple h2 {
-    color: var(--card-purple);
-}
-
-.ultima .purple a {
-    background: var(--card-purple);
-}
-
-.ultima .green h2 {
-    color: var(--card-green);
-    text-align: right;
-}
-
-.ultima .green a {
-    background: var(--card-green);
-}
-
-.ultima .red h2 {
-    color: var(--card-red);
-}
-
-.ultima .red a {
-    background: var(--card-red);
-}
-
-.ultima .yellow h2 {
-    color: var(--card-yellow);
-}
-
-.ultima .yellow a {
-    background: var(--card-yellow);
+@media screen and (min-width: 400px) {
+    .infos .donation .element:nth-child(1) div {
+        max-width: 13.188rem;
+    }
 }

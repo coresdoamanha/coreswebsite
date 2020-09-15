@@ -4,11 +4,10 @@ import Navbar from '../Navbar';
 
 function Header(props) {
     return (
-        <header>
+        <header className="header">
             <Navbar />
             <div className="content">
                 <h1> {props.title} </h1>
-
                 {props.children}
             </div>
         </header>

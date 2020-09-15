@@ -1,24 +1,114 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 :root {
-    --background: #FFFFFF;
-    --background-light: #EBF5FF;
-    --background-footer: #525252;
     --background-dark: #478FD3;
-    --background-nav: #F4F1F6;
-    --card-purple: #5E2590;
-    --card-yellow: #FBC707;
-    --card-green: #80CC28;
-    --card-red: #EF2E32;
-    --card-orange: #F9A72B;
-    --background-item: #9CCFFF;
-    font-size: 12px;
+    --background-light: #9CCFFF;
+    --background-item: #EBF5FF;
+    --menu-color: #F4F1F6;
+    --footer-color: #525252;
+    --text-color: #FFFFFF;
+    --shadow: #00000099;
+    
+    --purple: #5E2590;
+    --yellow: #FBC707;
+    --green: #80CC28;
+    --red: #EF2E32;
+    --orange: #F9A72B;
+
+    font: 400 16px Nunito;
 }
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    transition: 0.5s;
 }
 
-* ::-webkit-scrollbar {
-    width: 0;
+p, li {
+    font: 400 0.875rem Nunito;
+}
+
+a {
+    font: 700 0.875rem Nunito;
+}
+
+h1 {
+    font: 800 1.125rem Nunito;
+}
+
+h2 {
+    font: 700 1.12rem Nunito;
+}
+
+h3 {
+    font: 700 1.12rem Nunito;
+}
+
+@media screen and (min-width: 400px) {
+    
+    p, li {
+        font: 400 1.125rem Nunito;
+    }
+    
+    a {
+        font: 700 1.125rem Nunito;
+    }
+    
+    h1 {
+        font: 800 1.875rem Nunito;
+    }
+    
+    h2 {
+        font: 700 1.85rem Nunito;
+    }
+
+    h3 {
+        font: 700 1.85rem Nunito;
+    }
 }

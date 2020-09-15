@@ -1,51 +1,145 @@
-nav {
+.navigation {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: 6.2rem;
-    padding: 0 8.5rem 0 8.5rem;
-    background: var(--background-nav);
-    align-items: center;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    grid-template-areas: "logo nav social";
-}
-
-nav .logo-area {
-    grid-area: logo;
-}
-
-nav .logo-area a img {
-    height: 4rem;
-}
-
-nav .nav-area {
-    grid-area: nav;
-    width: 100%;
+    height: 6.188rem;
+    margin: auto;
+    background: var(--menu-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-nav .nav-area a {
-    text-decoration: none;
-    font: 400 1.4rem Nunito;
-    padding: 0 3.1rem 0 0;
-    color: var(--background-dark);
+.pagecolumn, .smcolumn {
+    display: none;
 }
 
-nav .nav-area a:nth-child(5) {
-    padding: 0 6.8rem 0 0;
+.navigation .logocolumn {
+    padding-left: 1rem;
+    margin: auto 0 auto;
+    vertical-align: middle;
 }
 
-nav .social-area {
-    grid-area: social;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.navigation .logocolumn img {
+    width: 4.75rem;
 }
 
-nav .social-area a img {
-    height: 2rem;
-    width: 100%;
+.navigation .menubar {      
+    padding-right: 1rem;
+    margin: auto 0 auto;
+    vertical-align: middle;
+}
+
+.navigation .menubar .menuicon img {
+    height: 2.063rem;
+}
+
+@media screen and (min-width: 400px) {
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 6.188rem;
+        margin: auto;
+        background: var(--menu-color);
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    
+    .pagecolumn {
+        display: none;
+    }
+
+    .navigation .logocolumn {        
+        margin: auto;
+        vertical-align: middle;
+    }
+    
+    .navigation .logocolumn img {
+        width: 4.75rem;
+    }
+    
+    .navigation .smcolumn {
+        display: unset;        
+        margin: auto;
+        vertical-align: middle;
+    }
+    
+    .navigation .smcolumn a + a {
+        padding-left: 1.8rem;
+    }
+    
+    .navigation .smcolumn img {
+        height: 2.063rem;
+        margin: auto 0 auto;
+    }
+    
+    .navigation .menubar {      
+        margin: auto;
+        vertical-align: middle;
+    }
+    
+    .navigation .menubar .menuicon img {
+        height: 2.063rem;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .menubar {
+        display: none;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 6.188rem;
+        margin: auto;
+        background: var(--menu-color);
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        grid-template-columns: 4.75rem 39.563rem 9.938rem;
+        column-gap: 6.875rem;
+    }
+    
+    .navigation .logocolumn img {
+        width: 4.75rem;
+    }
+
+    .navigation .pagecolumn {
+        display: grid;
+        grid-template-columns: 5.625rem 4.625rem 7.188rem 4.5rem 5.125rem;
+        column-gap: 3.125rem;
+        margin: auto;
+        vertical-align: middle;
+    }
+
+    .navigation .pagecolumn a {
+        height: 100%;
+        text-decoration: none;
+        font-weight: 400;
+        color: var(--background-dark);
+        transition: 0.5s;
+    }
+
+    .navigation .smcolumn {        
+        margin: auto;
+        vertical-align: middle;
+    }
+
+    .navigation .smcolumn a + a {
+        padding-left: 1.8rem;
+    }
+    
+    .navigation .smcolumn img {
+        height: 2.063rem;
+        margin: auto 0 auto;
+    }
 }

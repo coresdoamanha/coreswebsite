@@ -11,11 +11,11 @@ function Routes() {
     return (
         <BrowserRouter>
             <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/contact" component={Contact} />
-            <Route path="/infos" component={Infos} />
-            <Route path="/projects" component={Projects} />
-            <Route path="/social" component={Social} />
+            <Route path="/sobre-nos" component={About} />
+            <Route path="/contato" component={Contact} />
+            <Route path="/como-ajudar" component={Infos} />
+            <Route path="/projetos" component={Projects} />
+            <Route path="/na-media" component={Social} />
         </BrowserRouter>
     );
 }
