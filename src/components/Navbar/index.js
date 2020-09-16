@@ -4,7 +4,6 @@ import logoCores from '../../assets/img/logocores2x.png';
 import facebook from '../../assets/img/icons/facebook.svg';
 import youtube from '../../assets/img/icons/youtube.svg';
 import instagram from '../../assets/img/icons/instagram.svg';
-import bars from '../../assets/img/icons/bars.svg';
 import './styles.css';
 
 function Navbar(){
@@ -34,8 +33,14 @@ function Navbar(){
                 </a>
             </div>
             <div className="menubar">
-                <div className="menuicon">
-                    <img src={bars} alt="Ícone de MenuBar"/>
+                <label for="toggle">&#9776;</label>
+                <input type="checkbox" id="toggle"/>
+                <div className="pagecolumn-toggled">
+                    <Link to="/sobre-nos">Sobre nós</Link>
+                    <Link to="/projetos">Projetos</Link>
+                    <Link to="/como-ajudar">Como ajudar</Link>
+                    <Link to="/contato">Contato</Link>
+                    <Link to="/na-media">Na mídia</Link>
                 </div>
             </div>
         </nav>

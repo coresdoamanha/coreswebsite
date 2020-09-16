@@ -1,8 +1,11 @@
 import React, {useState} from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import img1 from './img/img1.png';
-import img2 from './img/img2.png';
+import img1 from './img/cores-Jouse@2x.png';
+import img2 from './img/cores-Sede@2x.png';
+import './styles.css';
+import map from './img/map-marker-alt.png';
+import cel from './img/phone.png';
 import './styles.css';
 
 function Contact(){
@@ -24,11 +27,11 @@ function Contact(){
     }
 
     return (
-        <div>
-            <div className="contact">
+        <div className="contact">
+            <div className="contactbg">
                 <Header title="Entre em contato conosco" />
             </div>
-            <div className="formulario">
+            <div className="form">
                 <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Preencha o formulário ou nos contate através desses contatos, estamos disponíveis para te atender!</p>
 
                 <form onSubmit={handleSendData}>
@@ -40,25 +43,36 @@ function Contact(){
                         <input placeholder="Telefone" type="text" value={phone} onChange={(e) => { setPhone(e.target.value) }} />
                         <input placeholder="Assunto" type="text" value={subject} onChange={(e) => { setSubject(e.target.value) }} />
                     </div>
-                    <div className="rowformmessage">
+                    <div className="rowform">
                         <input placeholder="Escreva sua mensagem..." type="text" value={message} onChange={(e) => { setMessage(e.target.value) }} />
                     </div>
 
-                    <button type="submit">Enviar</button>
+                    <button type="submit" className="button">Enviar</button>
                 </form>
             </div>
-            <div className="sede">
-                <div className="coluna">
-                    <h2>Nossa sede</h2>
-                    <p>Nossa sede fica na Comunidade do Totó, em Recife! Venha nos visitar, vamos te receber de braços abertos e com muito carinho!</p>
-                    <p>Localização</p>
-                    <p>Sede de Fundação Rua Ana Carneiro de Albuquerque, 94 - Totó Recife – PE – CEP: 50.791-460 Espaço Cultural Cores do Amanhã Av. Garota de Ipanema Box – 02/03 Totó - Jardim Planalto CEP: 50920-680 Recife – PE – Brasil</p>
-                    <img src={img1} alt="teste" />
+            <div className="infos">
+                <div className="column">
+                    <div>
+                        <h3>Nossa sede</h3>
+                        <p>Nossa sede fica na Comunidade do Totó, em Recife! Venha nos visitar, vamos te receber de braços abertos e com muito carinho!</p>
+                        <p><img src={map} alt="Ícone de mapa" className="icon"/>  Localização<br/>
+                        Sede de Fundação<br/>Rua Ana Carneiro de Albuquerque, 94 - Totó Recife – PE – CEP: 50.791-460</p>
+                        <p>Espaço Cultural Cores do Amanhã Av. Garota de Ipanema Box – 02/03 Totó - Jardim Planalto CEP: 50920-680 Recife – PE – Brasil</p>
+                    </div>
+                    <div>
+                        <img src={img1} alt="teste" />
+                    </div>
                 </div>
-                <div className="coluna">
-                    <img src={img2} alt="teste" />
-                    <p>Contato e informações</p>
-                    <p>Movimento Social e Cultural Cores do Amanhã movimentoculturalcoresdoamanha@gmail.com (81) 3037.2338 CNPJ: 13.449.687/0001/99 | Inscrição Municipal: 476.864-7 Decreto de Lei de utilidade Pública Municipal: 18.621/19 Jouse Barata de Queiroz - Presidente Contatos: (81) 9 8876-3593 / (81) 9 9678-1217 e-mail: coresdoamanha2019@gmail.com Coordenação Geral Adelson Henrique | Erinaldo Maia | Fagner Cleiton Email: admcoresdoamanha19@gmail.com Coordenação Pedagógica Elton Ramos (Psicólogo) | Raquel Araújo (Pedagoga) Maria da Conceição - Pedagoga | Alberto Pires – Jurídico</p>
+                <div className="column">
+                    <div>
+                        <img src={img2} alt="teste" />
+                    </div>
+                    <div>
+                        <p><img src={cel} alt="Ícone de telefone" className="icon"/> Contato e informações <br/> Movimento Social e Cultural Cores do Amanhã movimentoculturalcoresdoamanha@gmail.com <br/>(81) 3037.2338<br/>CNPJ: 13.449.687/0001/99 | Inscrição Municipal: 476.864-7 <br/> Decreto de Lei de utilidade Pública Municipal: 18.621/19</p>
+                        <p>Jouse Barata de Queiroz - Presidente <br/>Contatos: (81) 9 8876-3593 / (81) 9 9678-1217 <br/>e-mail: coresdoamanha2019@gmail.com</p>
+                        <p>Coordenação Geral Adelson Henrique | Erinaldo Maia | Fagner Cleiton <br/> Email: admcoresdoamanha19@gmail.com</p>
+                        <p>Coordenação Pedagógica <br/>Elton Ramos (Psicólogo) | Raquel Araújo (Pedagoga) Maria da Conceição (Pedagoga) | Alberto Pires (Jurídico)</p>
+                    </div>
                 </div>
             </div>
             <Footer></Footer>

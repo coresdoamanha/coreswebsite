@@ -15,6 +15,7 @@
 .infos .howtohelp p {
     max-width: 56rem;
     text-align: justify;
+    margin: auto;
 }
 
 .infos .howtohelp h2 {
@@ -35,8 +36,8 @@
     max-width: 5.313rem;
 }
 
-.infos .howtohelp .cards div {
-    margin: 0 1rem 1rem 0;
+.infos .howtohelp .cards div + div {
+    margin: 0 0 1rem 1rem;
     justify-content: center;
 }
 
@@ -144,8 +145,8 @@
 }
 
 .infos .help h2 {
-    padding-bottom: 2.5rem;
     text-align: center;
+    color: var(--background-dark);
 }
 
 .infos .help .card {
@@ -166,7 +167,7 @@
 }
 
 .infos .help .card div h3 {
-    padding-bottom: 0.625rem;
+    padding: 2.5rem 0 0.625rem;
     text-align: center;
 }
 
@@ -176,21 +177,124 @@
     margin: 0 2.313rem 0;
 }
 
-.infos .help:nth-of-type(even){
-    display: grid;
-    grid-template-areas: "a" "b";
+.infos .help .card:nth-of-type(odd) {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
-.infos .help:nth-of-type(even) div {
-    grid-area: b;
+.infos .help .card:nth-of-type(odd) img {
+    margin-top: 1.25rem;
 }
 
-.infos .help:nth-of-type(even) div + div {
-    grid-area: a;
+.infos .help .orange h3 {
+    color: var(--orange);
+}
+
+.infos .help .orange a {
+    background: var(--orange);
+}
+
+.infos .help .red h3 {
+    color: var(--red);
+}
+
+.infos .help .red a {
+    background: var(--red);
+}
+
+.infos .help .green h3 {
+    color: var(--green);
+}
+
+.infos .help .green a {
+    background: var(--green);
+}
+
+.infos .help .yellow h3 {
+    color: var(--yellow);
+}
+
+.infos .help .yellow a {
+    background: var(--yellow);
 }
 
 @media screen and (min-width: 400px) {
     .infos .donation .element:nth-child(1) div {
         max-width: 13.188rem;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .infos .howtohelp {
+        padding: 3.125rem 2.313rem 1.875rem;
+    }
+        
+    .infos .howtohelp h2 {
+        padding-bottom: 1.875rem;
+    }
+    
+    .infos .howtohelp .cards div, .infos .howtohelp .cards img, .infos .howtohelp .cards p {
+        max-width: 6.938rem;
+    }
+    
+    .infos .howtohelp .cards div + div {
+        margin: 0 0 1rem 2rem;
+    }
+
+    .infos .donation {
+        width: 100%;
+        height: 19.125rem;
+        display: grid;
+        grid-template-columns: calc(50% - 12rem) 22rem calc(50% - 12rem);
+        align-items: center;
+    }
+    
+    .infos .donation .element {
+        padding: 1.875rem 1rem;
+    }
+
+    .infos .donation .element:nth-of-type(1){
+        justify-self: right;
+    }
+
+    .infos .donation .element:nth-of-type(2) {
+        height: 100%;
+    }
+
+    .infos .donation .element:nth-of-type(1), .infos .donation .element:nth-of-type(2), .infos .donation .element:nth-of-type(3) {
+        max-width: 22rem;
+    }
+
+    .infos .infoimage {
+        height: 22.813rem;
+    }
+    
+    .infos .help {
+        padding: 4.375rem 0 6.875rem;
+    }
+    
+    .infos .help h2 {
+        text-align: center;
+        padding-bottom: 3.125rem;
+        color: var(--background-dark);
+    }
+    
+    .infos .help .card, .infos .help .card:nth-of-type(odd) {
+        display: grid;
+        grid-template-columns: 33.5rem 33.5rem;
+        column-gap: 1.25rem;
+        justify-content: center;
+    }
+
+    .infos .help .card h3, .infos .help .card:nth-of-type(odd) h3 {
+        padding: 0 0 1rem;
+    }
+    
+    .infos .help .card:nth-of-type(odd) img {
+        margin-top: 0;
+    }
+
+    .infos .help .card + .card {
+        margin-top: 4.375rem;
     }
 }
