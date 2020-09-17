@@ -1,0 +1,90 @@
+.social .socialbg .header .content {
+    background: url('./img/cores_na-midia_banner.png');
+    background: url('./img/cores_na-midia_banner@2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.social .video {
+    padding: 1.25rem 1.25rem;
+    justify-content: center;
+}
+
+.social .video p {
+    text-align: center;
+    max-width: 56.5rem;
+    margin: auto;
+    color: var(--foter-color);
+}
+
+.social .images {
+    padding: 1.25rem 2.313rem 2.5rem;
+    display: grid;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.social .images div {
+    display: grid;
+    row-gap: 1rem;
+    justify-content: center;
+}
+
+.social .images img {
+    width: 100%;
+    max-width: 30rem;
+}
+
+.social .socialm {
+    background: var(--background-item);
+    padding: 1.25rem 2.313rem 2.5rem;
+    justify-content: center;
+}
+
+.social .socialm h1 {
+    color: var(--footer-color);
+    text-align: center;
+    max-width: 50rem;
+    margin: 0 auto 1.438rem;
+}
+
+.social .socialm .smicons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 10rem;
+    margin: auto;
+}
+
+.social .socialm .smicons img {
+    width: 100%;
+    max-width: 1.875rem;
+}
+
+@media screen and (min-width: 1100px) {
+    .social .video {
+        padding: 3.125rem 1.25rem;
+    }
+    
+    .social .images {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+    }
+    
+    .social .socialm {
+        padding: 3.125rem 2.313rem 6.875rem;
+    }
+
+    .social .socialm h1 {
+        margin: 0 auto 2.313rem;
+    }
+    
+    .social .socialm .smicons {
+        max-width: 16.25rem;
+    }
+
+    .social .socialm .smicons img {
+        max-width: 3.125rem;
+    }
+}

@@ -33,7 +33,7 @@ function Navbar(){
                 </a>
             </div>
             <div className="menubar">
-                <label for="toggle">&#9776;</label>
+                <label htmlFor="toggle">&#9776;</label>
                 <input type="checkbox" id="toggle"/>
                 <div className="pagecolumn-toggled">
                     <Link to="/sobre-nos">Sobre nós</Link>

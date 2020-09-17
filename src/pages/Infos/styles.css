@@ -24,47 +24,47 @@
     text-align: center;
 }
 
-.infos .howtohelp .cards {
+.infos .howtohelp .helpcards {
     justify-content: center;
     margin: 1.875rem auto 2.5rem;
     display: flex;
     flex-wrap: wrap;
 }
 
-.infos .howtohelp .cards div, .infos .howtohelp .cards img, .infos .howtohelp .cards p {
+.infos .howtohelp .helpcards div, .infos .howtohelp .helpcards img, .infos .howtohelp .helpcards p {
     width: 100%;
     max-width: 5.313rem;
 }
 
-.infos .howtohelp .cards div + div {
+.infos .howtohelp .helpcards div + div {
     margin: 0 0 1rem 1rem;
     justify-content: center;
 }
 
-.infos .howtohelp .cards p {
+.infos .howtohelp .helpcards p {
     font-size: 0.875rem;
     font-weight: 800;
     text-align: center;
     padding-top: 0.625rem;
 }
 
-.infos .howtohelp .cards .boxopen {
+.infos .howtohelp .helpcards .boxopen {
     color: var(--purple);
 }
 
-.infos .howtohelp .cards .handshelping {
+.infos .howtohelp .helpcards .handshelping {
     color: var(--red);
 }
 
-.infos .howtohelp .cards .handheart {
+.infos .howtohelp .helpcards .handheart {
     color: var(--green);
 }
 
-.infos .howtohelp .cards .paintbrush {
+.infos .howtohelp .helpcards .paintbrush {
     color: var(--orange);
 }
 
-.infos .howtohelp .cards .palette {
+.infos .howtohelp .helpcards .palette {
     color: var(--yellow);
 }
 
@@ -149,42 +149,64 @@
     color: var(--background-dark);
 }
 
-.infos .help .card {
+.infos .help .crow {
     display: grid;
     row-gap: 1.25rem;
     justify-content: center;
 }
 
-.infos .help .card div {
+.infos .help .crow .text-content {
     margin: auto;
     display: grid;
     justify-content: center;
 }
 
-.infos .help .card div img {
+.infos .help .crow .carousel-c {
+    display: flex;
+    margin: auto;
     width: 100%;
     max-width: 33.5rem;
 }
 
-.infos .help .card div h3 {
+.infos .help .crow .carousel-c a {
+    width: 2.188rem;
+    height: 2.188rem;
+    opacity: 1;
+    align-self: center;
+    margin: auto 1rem;
+    border-radius: 25px;
+}
+
+.infos .help .crow .text-content div {
+    justify-self: center;
+    margin: 2rem auto 2rem;
+}
+
+.infos .help .crow img {
+    width: 100%;
+    max-width: 33.5rem;
+    margin: auto;
+}
+
+.infos .help .crow .text-content h3 {
     padding: 2.5rem 0 0.625rem;
     text-align: center;
 }
 
-.infos .help .card div p {
+.infos .help .crow .text-content p {
     padding-bottom: 1.25rem;
     text-align: justify;
     margin: 0 2.313rem 0;
 }
 
-.infos .help .card:nth-of-type(odd) {
+.infos .help .crow:nth-of-type(odd) {
     display: flex;
     flex-direction: column-reverse;
 }
 
-.infos .help .card:nth-of-type(odd) img {
-    margin-top: 1.25rem;
-}
+/* .infos .help .crow:nth-of-type(odd) img {
+    padding-top: 1.25rem;
+} */
 
 .infos .help .orange h3 {
     color: var(--orange);
@@ -233,11 +255,11 @@
         padding-bottom: 1.875rem;
     }
     
-    .infos .howtohelp .cards div, .infos .howtohelp .cards img, .infos .howtohelp .cards p {
+    .infos .howtohelp .helpcards div, .infos .howtohelp .helpcards img, .infos .howtohelp .helpcards p {
         max-width: 6.938rem;
     }
     
-    .infos .howtohelp .cards div + div {
+    .infos .howtohelp .helpcards div + div {
         margin: 0 0 1rem 2rem;
     }
 
@@ -279,22 +301,22 @@
         color: var(--background-dark);
     }
     
-    .infos .help .card, .infos .help .card:nth-of-type(odd) {
+    .infos .help .crow, .infos .help .crow:nth-of-type(odd) {
         display: grid;
         grid-template-columns: 33.5rem 33.5rem;
         column-gap: 1.25rem;
         justify-content: center;
     }
 
-    .infos .help .card h3, .infos .help .card:nth-of-type(odd) h3 {
+    .infos .help .crow h3, .infos .help .crow:nth-of-type(odd) h3 {
         padding: 0 0 1rem;
     }
     
-    .infos .help .card:nth-of-type(odd) img {
+    .infos .help .crow:nth-of-type(odd) img {
         margin-top: 0;
     }
 
-    .infos .help .card + .card {
+    .infos .help .crow + .crow {
         margin-top: 4.375rem;
     }
 }

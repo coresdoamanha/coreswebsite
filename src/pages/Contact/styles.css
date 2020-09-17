@@ -61,6 +61,8 @@
 }
 
 .contact .infos {
+    display: grid;
+    row-gap: 1rem;
     padding: 1.25rem 0 5rem;
     justify-content: center;
 }
@@ -72,20 +74,9 @@
     justify-items: center;
 }
 
-.contact .infos .column + .column {
-    margin: 1rem 0 0;
-}
-
-.contact .infos .column + .column {
-    grid-template-areas: "a" "b";
-}
-
-.contact .infos .column + .column div{
-    grid-area: b;
-}
-
-.contact .infos .column + .column div + div{
-    grid-area: a;
+.contact .infos .column div {
+    width: 100%;
+    max-width: 33.5rem;
 }
 
 .contact .infos .column h3 {
@@ -93,10 +84,9 @@
     padding: 0 0 0.625rem;
 }
 
-.contact .infos .column img {
+.contact .infos .column div img {
     width: 100%;
-    max-width: 33.5rem;
-    margin: auto;
+    max-width: 33rem;
 }
 
 .contact .infos .column .icon {
@@ -111,6 +101,19 @@
 
 .contact .infos .column p + p {
     padding-top: 1.25rem;
+}
+
+.contact .infos .column + .column {
+    grid-template-areas: "a" "b";
+    row-gap: 1.25rem;
+}
+
+.contact .infos .column + .column div{
+    grid-area: b;
+}
+
+.contact .infos .column + .column div + div{
+    grid-area: a;
 }
 
 @media screen and (min-width: 1100px) {
@@ -148,16 +151,10 @@
 
     .contact .infos .column {
         display: grid;
-        grid-template-columns: 33.5rem 33.5rem;
+        grid-template-columns: auto auto;
         column-gap: 1rem;
         align-items: center;
         margin: 0 auto 0;
-        justify-self: center;
-    }
-
-    
-    .contact .infos .column + .column {
-        margin: 1rem auto 0;
     }
 
     .contact .infos .column .icon {

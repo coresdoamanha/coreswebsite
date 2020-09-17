@@ -9,6 +9,7 @@
     background: var(--menu-color);
     display: flex;
     justify-content: space-between;
+    z-index: 20;
 }
 
 .pagecolumn, .smcolumn {
