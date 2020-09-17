@@ -17,12 +17,12 @@ function Footer(){
                 </div>
                 <div className="pages">
                     <p><strong>Links rápidos</strong></p>
-                    <Link to="/about">Sobre nós</Link>
-                    <Link to="/projects">Projetos</Link>
+                    <Link to="/sobre-nos">Sobre nós</Link>
+                    <Link to="/projetos">Projetos</Link>
                 </div>
                 <div className="sm">
-                    <Link to="/contact">Contato</Link>
-                    <Link to="/infos">Como ajudar</Link>
+                    <Link to="/contato">Contato</Link>
+                    <Link to="/sobre-nos">Como ajudar</Link>
                     <div className="sma">
                         <a href="https://www.instagram.com/coresdoamanha/">
                             <img src={instagram} alt="Logo da rede social Instagram" />
