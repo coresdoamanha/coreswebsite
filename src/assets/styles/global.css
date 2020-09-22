@@ -117,3 +117,8 @@ h3 {
         font: 700 1.85rem Nunito;
     }
 }
+
+a:hover {
+    text-decoration: none;
+    color: var(--text-color);
+}
