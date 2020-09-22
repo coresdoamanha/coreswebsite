@@ -52,6 +52,7 @@ import img2 from './img/jouse-premio.png';
 import './styles.css';
 
 function Infos(){
+    window.scrollTo(0, 0);
     return (
         <div className="infos">
             <div className="infosbg">

@@ -78,6 +78,11 @@ a {
     font: 700 0.875rem Nunito;
 }
 
+a:hover {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
 h1 {
     font: 800 1.125rem Nunito;
 }

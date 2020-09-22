@@ -9,6 +9,8 @@ import cel from './img/phone.png';
 import './styles.css';
 
 function Contact(){
+    window.scrollTo(0, 0);
+
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');

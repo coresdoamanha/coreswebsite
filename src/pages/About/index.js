@@ -21,6 +21,7 @@ import galeria8 from './img/galeria8.png';
 import './styles.css';
 
 function About(){
+    window.scrollTo(0, 0);
     const premios = ['2009 - Ganhador do Edital Dagente – Escola de Artes e Tecnologia OI KABUM! | Com o prêmio gravamos o documentário CORES DA RUA, que conta nossa história.', '2010 - Ganhadores do Prêmio Preto Ghoéz de Hip Hop – Edital promovido pelo Governo Federal (MINC) | Com o prêmio conseguimos comprar uma Kombi.', '2011 - Ganhadores do Concurso Cultural promovido pela Listerine J&J | O prêmio foi uma casa na comunidade do Totó onde montamos o Espaço Cultural Cores do Amanhã).', '2013 - Melhor instituição do Ano de Pernambuco CUFA - Central única das Favelas e Ganhadores do Troféu ANU Dourado', '2014 - Vencedores do Prêmio Nacional representando Pernambuco - Inovação da visão mundial', '2014/2015 - Prêmio Cultura Hip Hop - FUNARTE - GOVERNO FEDERAL', '2018 - Edital Negras Potências - Apoiado pela Coca Cola e Fundo Baobá', '2019 - Prêmio Mulheres que mudaram a História de Pernambuco', '2019 - Prêmio Bem Maior. Com o prêmio conseguimos ampliar o Espaço cultural do Cores.', '2019 - IRME - Multiplicadora da Rede de Mulheres Empreendedoras com apoio da Google', '2019 - Homenageada pela Governadora em Exercício do Estado de Pernambuco (Luciana Santos) com o Diploma – Medalha Solano Trindade 2019, por Exercer a função Pública relevante na Política Estadual de Promoção da Igualdade Racial.'];
     return (
         <div className="about">

@@ -20,6 +20,7 @@ import galeria8 from './img/galeria8.png';
 import './styles.css';
 
 function Projects(){
+    window.scrollTo(0, 0);
     const atividades = ['Arte em Gesso', 'Estamparia', 'Graffitagem', 'Break – Dança de Rua', 'Ballet', 'Dança', 'Swingueira', 'Teatro', 'Danças', 'Folcloricas', 'Dança', 'Contemporânea', 'Informática', 'Mini-bilbioteca com rodas de leitura', 'Kung Fu', 'Desenho Básico e Artístico', 'Pintura Decorativa e Aquarela', 'Percussão', 'Aerografia – Arte em bolsas, camisas, parede...', 'Jogos e Recreação', 'Taekwondo', 'Desenho', 'Cartoon', '4 Elementos do Hip Hop', 'Dança Popular', 'Karatê', 'Jiu jitsu', 'Karatê', 'Capoeira', 'Arte', 'Yoga', 'Dança']
     return (
         <div className="projects">

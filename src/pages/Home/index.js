@@ -21,6 +21,7 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 
 function Home() {
+    window.scrollTo(0, 0);
     return (
         <div className="home">
             <div className="homebg">

@@ -17,6 +17,7 @@ import img10 from './img/gallerysm10.png';
 import './styles.css';
 
 function Social(){
+    window.scrollTo(0, 0);
     return (
         <div className="social">
             <div className="socialbg">
