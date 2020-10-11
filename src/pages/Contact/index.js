@@ -1,8 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
+// import emailjs from 'emailjs-com';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import img1 from './img/cores-Jouse@2x.png';
 import img2 from './img/cores-Sede@2x.png';
+import whatsapp from '../../assets/img/icons/whatsapp.svg';
 import './styles.css';
 import map from './img/map-marker-alt.png';
 import cel from './img/phone.png';
@@ -11,22 +13,16 @@ import './styles.css';
 function Contact(){
     window.scrollTo(0, 0);
 
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [phone, setPhone] = useState('');
-    const [subject, setSubject] = useState('');
-    const [message, setMessage] = useState('');
+    // function handleSendData(e) {
+    //     e.preventDefault();
 
-    function handleSendData(e) {
-        e.preventDefault();
-        console.log({
-            name,
-            email,
-            phone,
-            subject,
-            message
-        })
-    }
+    //     emailjs.sendForm('emailcores', 'template_srcy6eb', e.target, 'user_yIXuy9FYf4EAUCphes7tC')
+    //         .then((result) => {
+    //             alert("Seu e-mail foi enviado!");
+    //         }, (error) => {
+    //             console.log(error.text);
+    //     });
+    // }
 
     return (
         <div className="contact">
@@ -34,24 +30,29 @@ function Contact(){
                 <Header title="Entre em contato conosco" />
             </div>
             <div className="form">
+                <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Clique no botão abaixo e fale direto com nossa equipe!</p>
+                <a className="button" href="https://api.whatsapp.com/send?phone=5581988763593&text=Olá! Gostaria de mais informações sobre como posso ajudar a ONG com doações!">Clique aqui e fale conosco <img src={whatsapp} alt="Ícone do Whatsapp" /></a>
+
+            </div>
+            {/* <div className="form">
                 <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Preencha o formulário ou nos contate através desses contatos, estamos disponíveis para te atender!</p>
 
                 <form onSubmit={handleSendData}>
                     <div className="rowform">
-                        <input placeholder="Nome" type="text" value={name} onChange={(e) => { setName(e.target.value) }} />
-                        <input placeholder="E-mail" type="text" value={email} onChange={(e) => { setEmail(e.target.value) }} />
+                        <input placeholder="Nome" type="text"  name="user_name" />
+                        <input placeholder="E-mail" type="text"  name="user_mail" />
                     </div>
                     <div className="rowform">
-                        <input placeholder="Telefone" type="text" value={phone} onChange={(e) => { setPhone(e.target.value) }} />
-                        <input placeholder="Assunto" type="text" value={subject} onChange={(e) => { setSubject(e.target.value) }} />
+                        <input placeholder="Telefone" type="text" name="user_contact" />
+                        <input placeholder="Assunto" type="text" name="subject" />
                     </div>
                     <div className="rowform">
-                        <input placeholder="Escreva sua mensagem..." type="text" value={message} onChange={(e) => { setMessage(e.target.value) }} />
+                        <input placeholder="Escreva sua mensagem..." type="text" name="message" />
                     </div>
 
                     <button type="submit" className="button">Enviar</button>
                 </form>
-            </div>
+            </div> */}
             <div className="infos">
                 <div className="column">
                     <div>

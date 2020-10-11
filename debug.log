@@ -1075,3 +1075,5 @@
 [0830/102758.979:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffe1f7c3d40 of 336 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
 [0830/102758.979:ERROR:process_memory_win.cc(73)] ReadMemory at 0x7ffe1f7c53c0 of 64 bytes failed: Somente uma parte de um pedido ReadProcessMemory ou WriteProcessMemory foi concluída. (0x12B)
 [0830/102758.981:ERROR:scoped_process_suspend.cc(40)] NtResumeProcess: Tentou-se acessar um processo de saída. (0xc000010a)
+[1010/210054.515:ERROR:settings.cc(430)] Settings version is not 5
+[1010/211054.556:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)

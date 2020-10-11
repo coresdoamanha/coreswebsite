@@ -67,9 +67,6 @@
 a {
     text-align: center;
 }
-a:active {
-    border-bottom: 5px solid var(--white,#fff);
-}
 
 @media screen and (min-width: 400px) {
     .navigation {

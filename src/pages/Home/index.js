@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactPlayer from 'react-player/youtube'
 import Header from '../../components/Header';
 import Button from '../../components/Button';
 import Footer from '../../components/Footer';
@@ -8,6 +9,9 @@ import heart from '../../assets/img/icons/heart.svg';
 import paintbrush from '../../assets/img/icons/paint-brush.svg';
 import music from '../../assets/img/icons/music.svg';
 import whatsapp from '../../assets/img/icons/whatsapp.svg';
+
+import par1 from '../../assets/img/sesc.png';
+import par2 from '../../assets/img/bemmaior.jfif';
 
 import CF12 from './img/home_cores-femininas@2x.png';
 import CF22 from './img/home_cores-femininas2@2x.png';
@@ -105,7 +109,7 @@ function Home() {
             </div>
             <div className="homevideo">
                 <h2>Quer conhecer mais detalhes da história do Cores? Assista ao vídeo abaixo! &#10084;</h2>
-                {/* <ReactPlayer url='https://www.youtube.com/embed/bwYuAUSn8cM?start=35' playing={true} controls={false} muted /> */}
+                <ReactPlayer className="video" url='https://www.youtube.com/embed/bwYuAUSn8cM?start=35' playing={true} controls={true} muted />
                 <div className="donation">
                     <div className="element">
                         <div>
@@ -128,6 +132,13 @@ function Home() {
                 </div>
                 <div className="help">
                     <p>Precisamos da sua ajuda! Faça sua doação ou <Link to="/infos">clique aqui</Link> para conhecer diversas formas de colaborar com o Cores!</p>
+                </div>
+                <div className="partners">
+                    <h2>Parceiros:</h2>
+                    <div>
+                        <img src={par1} alt="teste" />
+                        <img src={par2} alt="teste" />
+                    </div>
                 </div>
             </div>
             <Footer></Footer>

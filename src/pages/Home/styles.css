@@ -125,6 +125,13 @@
     color: var(--footer-color);
 }
 
+.home .homevideo .video {
+    margin: auto;
+    display: flex;
+    width: 100% !important;
+    max-width: 640px !important;
+}
+
 .home .homevideo .donation {
     display: grid;
     grid-template-columns: 100%;
@@ -202,6 +209,23 @@
 .home .homevideo .help a {
     text-decoration: none;
     color: var(--background-dark);
+}
+
+.home .partners {
+    justify-content: center;
+}
+
+.home .partners div {
+    width: auto;
+    justify-content: center;
+    display: grid;
+    margin: 0 auto 3rem !important;
+}
+
+.home .partners img {
+    width: 100%;
+    max-width: 30rem;
+    margin: auto;
 }
 
 @media screen and (min-width: 400px) {
@@ -295,5 +319,9 @@
 
     .home .homevideo .help {
         padding: 3.125rem 0 5.625rem;
+    }
+
+    .home .partners div {
+        display: flex;
     }
 }
