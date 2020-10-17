@@ -141,7 +141,7 @@ function Infos(){
                         <h3>Contratando um de nossos artistas</h3>
                         <p>Precisando renovar algum espaço? Dar mais vida e alegria á alguma parede? A a arte tem esse poder! Contrate um de nossos artistas! Além de ter uma arte exclusiva sua, você vai estar ajudando o Cores do Amanhã. Nossos artistas fazem graffitis, aerografia e painéis e também desenhos que podem virar lindos quadros para você poder presentear você mesmo ou alguém querido. Se interessou? Entre em contato conosco para solicitar o seu trabalho!</p>
                         <div>
-                            <Button title="Quero contratar" to="/" />
+                            <Button title="Quero contratar" href="https://api.whatsapp.com/send?phone=5581988763593&text=Olá! Gostaria de mais informações sobre como posso contratar os serviços da ONG!"  />
                         </div>                       
                     </div>
                 </div>
@@ -150,7 +150,7 @@ function Infos(){
                         <h3>Seja um parceiro fixo</h3>
                         <p>Deseja ser um parceiro fixo do Cores do Amanhã? Essa atitude nos ajuda a manter nosso espaço e as atividades que nele acontece, como festas, oficinas, estrutura básica, compra de materiais e lanches para as crianças que fazem parte das atividades do Cores. Como forma de agradecimento, colocamos a marca da sua empresa na Homepage do nosso site! Entre em contato conosco, sua contribuição é muito importante para continuarmos a fazer diferença na vida das pessoas da nossa comunidade.</p>
                         <div>
-                            <Button title="Quero ser um parceiro" to="/" />
+                            <Button title="Quero ser um parceiro" href="https://api.whatsapp.com/send?phone=5581988763593&text=Olá! Gostaria de mais informações sobre como posso ser um parceiro fixo!"   />
                         </div>
                     </div>
                     <div className="carousel-c">
@@ -190,7 +190,7 @@ function Infos(){
                         <h3>Seja um voluntário</h3>
                         <p>Você também pode nos ajudar sendo um de nossos voluntários! Você gosta de trabalhar com crianças, jovens e a comunidade em geral? Pode desenvolver uma atividade artística que seja voltada a cultura e cidadania? Aqui é o lugar certo! Toda ajuda é muito bem vinda e o trabalho voluntário é a base de nosso espaço, vamos juntos levar educação, lazer muita cultura para nossa comunidade!</p>
                         <div>
-                            <Button title="Quero ser voluntário" to="/" />
+                            <Button title="Quero ser voluntário" href="https://api.whatsapp.com/send?phone=5581988763593&text=Olá! Gostaria de mais informações sobre como posso me tornar parte dos voluntários!" />
                         </div>
                     </div>
                 </div>
@@ -199,7 +199,7 @@ function Infos(){
                         <h3>Compre artesanato feito na comunidade</h3>
                         <p>Você também pode apoiar o Cores comprando artesanato feito pelos artistas da nossa comunidade. Bolsas, telas, camisetas, agendas.</p>
                         <div>
-                            <Button title="Quero comprar" to="/" />
+                            <Button title="Quero comprar" href="https://api.whatsapp.com/send?phone=5581988763593&text=Olá! Gostaria de mais informações sobre como posso adquirir os produtos de artesanato confeccionados pela ONG!" />
                         </div>
                     </div>
                     <div className="carousel-c">
@@ -261,7 +261,7 @@ function Infos(){
                         <h3>Caminho das Cores</h3>
                         <p>Quer conhecer mais Recife, o Cores do Amanhã e nossa comunidade? Participe do Caminho das Cores! Através dessa iniciativa oferecemos visitas turísticas para conhecer os graffitis lindos da nossa região, o nosso bairro e o Cores!</p>
                         <div>
-                            <Button title="Quero participar" to="/" />
+                            <Button title="Quero participar" href="https://api.whatsapp.com/send?phone=5581988763593&text=Olá! Gostaria de mais informações sobre como posso participar do Caminho das Cores!" />
                         </div>                        
                     </div>
                 </div>

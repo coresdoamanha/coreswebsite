@@ -87,7 +87,7 @@ function Home() {
                         <h3>Cores Sonoras</h3>
                         <p>Esse projeto busca dar oportunidades aos adolescentes do bairro Totó através da construção de novos rumos através da música e da cultura popular brasileira.</p>
                         <div className="homebutton">
-                            <Button path="/" title="Conheça o Projeto"/>
+                            <Button path="/projetos" title="Conheça o Projeto"/>
                         </div>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ function Home() {
                     </div>
                 </div>
                 <div className="help">
-                    <p>Precisamos da sua ajuda! Faça sua doação ou <Link to="/infos">clique aqui</Link> para conhecer diversas formas de colaborar com o Cores!</p>
+                    <p>Precisamos da sua ajuda! Faça sua doação ou <Link to="/como-ajudar">clique aqui</Link> para conhecer diversas formas de colaborar com o Cores!</p>
                 </div>
                 <div className="partners">
                     <h2>Parceiros:</h2>

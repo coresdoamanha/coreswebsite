@@ -41,7 +41,7 @@ function About(){
                 <div className="mrow">
                     <div>
                         <h3><strong>Missão</strong></h3>
-                        <p>Esse projeto reúne várias artistas, que atuam dentro e fora do Hip Hop, em ações que tem como objetivo lutar pelos direitos, espaços e pelo fim dos diversos tipos de violências sofridas pelas mulheres.</p>   
+                        <p>Ser uma instituição que promova práticas educativas através das artes e dos esportes, buscando levar cultura e cidadania para crianças, adolescentes, jovens, famílias e mulheres da comunidade.</p>   
                     </div>
                     <div>
                         <img src={img1} alt="teste" />
@@ -59,13 +59,13 @@ function About(){
                     </div>
                     <div>
                         <h3><strong>Visão</strong></h3>
-                        <p>Esse projeto busca dar oportunidades aos adolescentes do bairro Totó através da construção de novos rumos através da música e da cultura popular brasileira.</p>
+                        <p>Ser uma referência na pratica de ações de educação social através da cultura vinda das periferias e dos Esportes dentro e fora do Estado de Pernambuco.</p>
                     </div>
                 </div>
                 <div className="mrow">
                     <div>
                     <h3><strong>Valores</strong></h3>
-                        <p>Esse projeto busca dar oportunidades aos adolescentes do bairro Totó através da construção de novos rumos através da música e da cultura popular brasileira.</p>
+                        <p>Solidariedade, participação democrática, transparência, compromisso social, valorização da arte de rua.</p>
                     </div>
                     <div>
                         <img src={img5} alt="teste" />
@@ -80,7 +80,7 @@ function About(){
                 <p>O grupo Cores do Amanhã é formado por artistas plásticos, grafiteiros, BBoys, MC’s, Dj’s , artesãos, músicos, fotógrafos, arte-educadores entre outros artistas. Todos trabalhando juntos, com o objetivo de levar cultura e cidadania através da artes, dos esportes e do Hip Hop para o Estado de Pernambuco.</p>
                 <div className="teambg">
                     <div className="teambutton">
-                        <Button title="Saiba como você pode ajudar" path="/infos" />
+                        <Button title="Saiba como você pode ajudar" path="/como-ajudar" />
                     </div>
                 </div>
             </div>
@@ -123,7 +123,7 @@ function About(){
                     </div>
                 </div>
                 <div className="abutton">
-                    <Button title="Faça parte da nossa história" path="/infos" />
+                    <Button title="Faça parte da nossa história" path="/como-ajudar" />
                 </div>
             </div>
             <Footer/>
