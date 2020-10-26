@@ -79,7 +79,7 @@
     height: 13rem;
     background: url('./img/team.png');
     background: url('./img/team@2x.png');
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
@@ -171,6 +171,12 @@
     display: grid;
     justify-content: center;
     padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 600px) {
+    .about .team .teambg {
+        background-size: cover;
+    }
 }
 
 @media screen and (min-width: 1100px) {
