@@ -17,6 +17,8 @@ import CF12 from './img/home_cores-femininas@2x.png';
 import CF22 from './img/home_cores-femininas2@2x.png';
 import CS12 from './img/home_cores-sonoras@2x.png';
 import CS22 from './img/home_cores-sonoras2@2x.png';
+import CC12 from './img/home_caminho-cores_1.png';
+import CC22 from './img/home_caminho-cores_2.png';
 
 import qrcode from './img/home_qr-code.png';
 
@@ -100,10 +102,10 @@ function Home() {
                         </div>   
                     </div>
                     <div>
-                        <img src={CF12} alt="teste" />
+                        <img src={CC12} alt="teste" />
                     </div>
                     <div>
-                        <img src={CF22} alt="teste" />
+                        <img src={CC22} alt="teste" />
                     </div>
                 </div>
             </div>
