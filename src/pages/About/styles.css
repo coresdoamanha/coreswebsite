@@ -76,6 +76,7 @@
 
 .about .team .teambg {
     width: 100%;
+    max-width: 1200px;
     height: 13rem;
     background: url('./img/team.png');
     background: url('./img/team@2x.png');

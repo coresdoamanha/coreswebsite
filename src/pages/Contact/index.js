@@ -1,5 +1,7 @@
 import React from 'react';
-// import emailjs from 'emailjs-com';
+import emailjs from 'emailjs-com';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import img1 from './img/cores-Jouse@2x.png';
@@ -10,31 +12,44 @@ import map from './img/map-marker-alt.png';
 import cel from './img/phone.png';
 import './styles.css';
 
+
+
 function Contact(){
     window.scrollTo(0, 0);
 
-    // function handleSendData(e) {
-    //     e.preventDefault();
+    function handleSendData(e) {
+        e.preventDefault();
 
-    //     emailjs.sendForm('emailcores', 'template_srcy6eb', e.target, 'user_yIXuy9FYf4EAUCphes7tC')
-    //         .then((result) => {
-    //             alert("Seu e-mail foi enviado!");
-    //         }, (error) => {
-    //             console.log(error.text);
-    //     });
-    // }
+        emailjs.sendForm('emailcores', 'template_srcy6eb', e.target, 'user_yIXuy9FYf4EAUCphes7tC')
+            .then((result) => {
+                toast.success("Seu e-mail foi enviado!");
+            }, (error) => {
+                toast.error("Erro ao encaminhar e-mail, tente novamente em alguns segundos.");
+        });
+    }
 
     return (
         <div className="contact">
+            <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            />
             <div className="contactbg">
                 <Header title="Entre em contato conosco" />
             </div>
-            <div className="form">
+            {/* <div className="form">
                 <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Clique no botão abaixo e fale direto com nossa equipe!</p>
                 <a className="button" href="https://api.whatsapp.com/send?phone=5581988763593&text=Olá! Gostaria de mais informações sobre como posso ajudar a ONG com doações!">Clique aqui e fale conosco <img src={whatsapp} alt="Ícone do Whatsapp" /></a>
 
-            </div>
-            {/* <div className="form">
+            </div> */}
+            <div className="form">
                 <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Preencha o formulário ou nos contate através desses contatos, estamos disponíveis para te atender!</p>
 
                 <form onSubmit={handleSendData}>
@@ -47,12 +62,12 @@ function Contact(){
                         <input placeholder="Assunto" type="text" name="subject" />
                     </div>
                     <div className="rowform">
-                        <input placeholder="Escreva sua mensagem..." type="text" name="message" />
+                        <textarea placeholder="Escreva sua mensagem..." type="text" name="message" />
                     </div>
 
-                    <button type="submit" className="button">Enviar</button>
+        <button type="submit" className="button">Enviar</button>
                 </form>
-            </div> */}
+            </div>
             <div className="infos">
                 <div className="column">
                     <div>
