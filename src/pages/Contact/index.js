@@ -6,7 +6,6 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import img1 from './img/cores-Jouse@2x.png';
 import img2 from './img/cores-Sede@2x.png';
-import whatsapp from '../../assets/img/icons/whatsapp.svg';
 import './styles.css';
 import map from './img/map-marker-alt.png';
 import cel from './img/phone.png';
