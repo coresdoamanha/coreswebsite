@@ -16,16 +16,16 @@ import './styles.css';
 function Contact(){
     window.scrollTo(0, 0);
 
-    function handleSendData(e) {
-        e.preventDefault();
+//     function handleSendData(e) {
+//         e.preventDefault();
 
-        emailjs.sendForm('emailcores', 'template_srcy6eb', e.target, 'user_yIXuy9FYf4EAUCphes7tC')
-            .then((result) => {
-                toast.success("Seu e-mail foi enviado!");
-            }, (error) => {
-                toast.error("Erro ao encaminhar e-mail, tente novamente em alguns segundos.");
-        });
-    }
+//         emailjs.sendForm('emailcores', 'template_srcy6eb', e.target, 'user_yIXuy9FYf4EAUCphes7tC')
+//             .then((result) => {
+//                 toast.success("Seu e-mail foi enviado!");
+//             }, (error) => {
+//                 toast.error("Erro ao encaminhar e-mail, tente novamente em alguns segundos.");
+//         });
+//     }
 
     return (
         <div className="contact">
@@ -51,21 +51,37 @@ function Contact(){
             <div className="form">
                 <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Preencha o formulário ou nos contate através desses contatos, estamos disponíveis para te atender!</p>
 
-                <form onSubmit={handleSendData}>
+                <form name="contact" method="post">
+                    <input type="hidden" name="form-name" value="contact" />
                     <div className="rowform">
-                        <input placeholder="Nome" type="text"  name="user_name" />
-                        <input placeholder="E-mail" type="text"  name="user_mail" />
+                        <input placeholder="Nome" type="text"  name="name" />
+                        <input placeholder="E-mail" type="text"  name="email" />
                     </div>
                     <div className="rowform">
-                        <input placeholder="Telefone" type="text" name="user_contact" />
+                        <input placeholder="Telefone" type="text" name="phone" />
                         <input placeholder="Assunto" type="text" name="subject" />
                     </div>
                     <div className="rowform">
                         <textarea placeholder="Escreva sua mensagem..." type="text" name="message" />
                     </div>
 
-        <button type="submit" className="button">Enviar</button>
+                    <button type="submit" className="button">Enviar</button>
                 </form>
+//                 <form onSubmit={handleSendData}>
+//                     <div className="rowform">
+//                         <input placeholder="Nome" type="text"  name="user_name" />
+//                         <input placeholder="E-mail" type="text"  name="user_mail" />
+//                     </div>
+//                     <div className="rowform">
+//                         <input placeholder="Telefone" type="text" name="user_contact" />
+//                         <input placeholder="Assunto" type="text" name="subject" />
+//                     </div>
+//                     <div className="rowform">
+//                         <textarea placeholder="Escreva sua mensagem..." type="text" name="message" />
+//                     </div>
+
+//                     <button type="submit" className="button">Enviar</button>
+//                 </form>
             </div>
             <div className="infos">
                 <div className="column">
