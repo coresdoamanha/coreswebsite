@@ -16,17 +16,6 @@ import './styles.css';
 function Contact(){
     window.scrollTo(0, 0);
 
-//     function handleSendData(e) {
-//         e.preventDefault();
-
-//         emailjs.sendForm('emailcores', 'template_srcy6eb', e.target, 'user_yIXuy9FYf4EAUCphes7tC')
-//             .then((result) => {
-//                 toast.success("Seu e-mail foi enviado!");
-//             }, (error) => {
-//                 toast.error("Erro ao encaminhar e-mail, tente novamente em alguns segundos.");
-//         });
-//     }
-
     return (
         <div className="contact">
             <ToastContainer
@@ -43,11 +32,6 @@ function Contact(){
             <div className="contactbg">
                 <Header title="Entre em contato conosco" />
             </div>
-            {/* <div className="form">
-                <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Clique no botão abaixo e fale direto com nossa equipe!</p>
-                <a className="button" href="https://api.whatsapp.com/send?phone=5581988763593&text=Olá! Gostaria de mais informações sobre como posso ajudar a ONG com doações!">Clique aqui e fale conosco <img src={whatsapp} alt="Ícone do Whatsapp" /></a>
-
-            </div> */}
             <div className="form">
                 <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Preencha o formulário ou nos contate através desses contatos, estamos disponíveis para te atender!</p>
 
@@ -67,21 +51,6 @@ function Contact(){
 
                     <button type="submit" className="button">Enviar</button>
                 </form>
-//                 <form onSubmit={handleSendData}>
-//                     <div className="rowform">
-//                         <input placeholder="Nome" type="text"  name="user_name" />
-//                         <input placeholder="E-mail" type="text"  name="user_mail" />
-//                     </div>
-//                     <div className="rowform">
-//                         <input placeholder="Telefone" type="text" name="user_contact" />
-//                         <input placeholder="Assunto" type="text" name="subject" />
-//                     </div>
-//                     <div className="rowform">
-//                         <textarea placeholder="Escreva sua mensagem..." type="text" name="message" />
-//                     </div>
-
-//                     <button type="submit" className="button">Enviar</button>
-//                 </form>
             </div>
             <div className="infos">
                 <div className="column">
