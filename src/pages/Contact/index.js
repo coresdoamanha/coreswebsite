@@ -1,5 +1,4 @@
 import React from 'react';
-import 'react-toastify/dist/ReactToastify.css';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import img1 from './img/cores-Jouse@2x.png';
@@ -16,17 +15,6 @@ function Contact(){
 
     return (
         <div className="contact">
-            <ToastContainer
-            position="top-center"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            />
             <div className="contactbg">
                 <Header title="Entre em contato conosco" />
             </div>
