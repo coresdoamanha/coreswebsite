@@ -7,11 +7,17 @@ import './styles.css';
 import map from './img/map-marker-alt.png';
 import cel from './img/phone.png';
 import './styles.css';
-
+import swal from 'sweetalert';
 
 
 function Contact(){
     window.scrollTo(0, 0);
+
+    function showAlert(e) {
+        e.preventDefault();
+        swal("Seu e-mail foi enviado!", "Obrigado por entrar em contato conosco, iremos lhe responder assim que possível!");
+        document.getElementById("contact-form").reset();
+    };
 
     return (
         <div className="contact">
@@ -21,7 +27,7 @@ function Contact(){
             <div className="form">
                 <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Preencha o formulário ou nos contate através desses contatos, estamos disponíveis para te atender!</p>
 
-                <form name="contact" method="post">
+                <form id="contact-form" name="contact" method="post" onSubmit={showAlert}>
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="rowform">
                         <input placeholder="Nome" type="text"  name="name" />
