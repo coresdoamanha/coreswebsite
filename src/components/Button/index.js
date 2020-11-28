@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './styles.css';
 
 function Button(props){
-    console.log(props)
     if(props.path != null){
         return (
             <Link to={props.path} className="button">

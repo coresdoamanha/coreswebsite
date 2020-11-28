@@ -13,11 +13,20 @@ import swal from 'sweetalert';
 function Contact(){
     window.scrollTo(0, 0);
 
-    function showAlert(e) {
-        e.preventDefault();
-        swal("Seu e-mail foi enviado!", "Obrigado por entrar em contato conosco, iremos lhe responder assim que possível!");
-        document.getElementById("contact-form").reset();
-    };
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        let myForm = document.getElementById('contact-form');
+        let formData = new FormData(myForm)
+        fetch('/', {
+          method: 'POST',
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        }).then(() => { 
+            swal("Seu e-mail foi enviado!", "Obrigado por entrar em contato conosco, iremos lhe responder assim que possível!", "success");
+            document.getElementById("contact-form").reset();
+        }).catch((error) =>
+        swal("Ops! Algo deu errado...", "Houve um erro ao enviar seu e-mail, tente novamente!","warning"))
+    }
 
     return (
         <div className="contact">
@@ -27,7 +36,7 @@ function Contact(){
             <div className="form">
                 <p>Tem alguma dúvida, sugestão ou deseja entrar em contato conosco? Preencha o formulário ou nos contate através desses contatos, estamos disponíveis para te atender!</p>
 
-                <form id="contact-form" name="contact" method="post" onSubmit={showAlert}>
+                <form id="contact-form" name="contact" method="post" onSubmit={handleSubmit}>
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="rowform">
                         <input placeholder="Nome" type="text"  name="name" />
