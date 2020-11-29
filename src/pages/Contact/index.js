@@ -39,15 +39,15 @@ function Contact(){
                 <form id="contact-form" name="contact" method="post" onSubmit={handleSubmit}>
                     <input type="hidden" name="form-name" value="contact" />
                     <div className="rowform">
-                        <input placeholder="Nome" type="text"  name="name" />
-                        <input placeholder="E-mail" type="text"  name="email" />
+                        <input placeholder="Nome" type="text"  name="name" required/>
+                        <input placeholder="E-mail" type="text"  name="email" required/>
                     </div>
                     <div className="rowform">
                         <input placeholder="Telefone" type="text" name="phone" />
                         <input placeholder="Assunto" type="text" name="subject" />
                     </div>
                     <div className="rowform">
-                        <textarea placeholder="Escreva sua mensagem..." type="text" name="message" />
+                        <textarea placeholder="Escreva sua mensagem..." type="text" name="message" required/>
                     </div>
 
                     <button type="submit" className="button">Enviar</button>
