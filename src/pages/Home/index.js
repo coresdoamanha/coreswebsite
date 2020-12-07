@@ -111,6 +111,8 @@ function Home() {
             </div>
             <div className="homevideo">
                 <h2>Quer conhecer mais detalhes da história do Cores? Assista ao vídeo abaixo! &#10084;</h2>
+                <ReactPlayer className="video" url='https://www.youtube.com/watch?v=xgfeW9bhZoQ&feature=youtu.be' playing={true} controls={true} />
+                <br />
                 <ReactPlayer className="video" url='https://www.youtube.com/embed/bwYuAUSn8cM?start=35' playing={true} controls={true} muted />
                 <div className="donation">
                     <div className="element">
