@@ -1,0 +1,273 @@
+.about .aboutbg .header .content {
+    background: url('./img/about-banner.png');
+    background: url('./img/about-banner@2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about .history {
+    padding: 1.25rem 2.313rem;
+    justify-content: center;
+}
+
+.about .history p {
+    text-align: justify;
+    color: var(--footer-color);
+    max-width: 56.5rem;
+    margin: auto;
+}
+
+.about .history p + p {
+    padding-top: 1rem;
+}
+
+.about .mission {
+    background: var(--background-item);
+}
+
+.about .mission .mrow h3 {
+    color: var(--footer-color);
+}
+
+.about .mission .mrow p {
+    text-align: justify;
+    color: var(--footer-color);
+}
+
+.about .mission .mrow h3 {
+    padding: 1.25rem 2.313rem 0;
+    font-size: 1.125rem;
+}
+
+.about .mission .mrow p {
+    padding: 0 2.313rem 0;
+}
+
+.about .mission .mrow div img {
+    width: 100%;
+    max-width: 22.5rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 1.25rem 0 0;
+}
+
+.about .mission .mrow:nth-child(2) {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.about .team {
+    color: var(--footer-color);
+}
+
+.about .team h3 {
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+.about .team p {
+    padding: 0.625rem 2.313rem 1.25rem;
+    text-align: justify;
+    max-width: 56.5rem;
+    margin: auto;
+}
+
+.about .team .teambg {
+    width: 100%;
+    margin: auto;
+    max-width: 1200px;
+    height: 13rem;
+    background: url('./img/team.png');
+    background: url('./img/team@2x.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.about .team .teambg .teambutton {
+    margin-top: 8rem;
+    align-self: baseline;
+    display: grid;
+}
+
+.about .awards {
+    color: var(--footer-color);
+}
+
+.about .awards h3 {
+    padding-top: 2.5rem;
+    text-align: center;
+}
+
+.about .awards .acontent div:first-of-type {
+    padding: 0.625rem 2.313rem 1.25rem;
+}
+
+.about .awards .acontent li {
+    text-align: justify;
+    list-style: disc;
+    list-style-position: inside;
+    line-height: 1.3rem;
+}
+
+.about .awards .acontent .imgcontent {
+    display: grid;
+    justify-content: center;
+    row-gap: 0.625rem;
+}
+
+.about .awards .acontent .imgcontent img {
+    width: 100%;
+    max-width: 22rem;
+}
+
+.about .awards .gallery {
+    padding: 0.625rem 0 1.25rem;
+    display: grid;
+    grid-template-areas: "a b" "c c";
+    row-gap: 0.625rem;
+    column-gap: 0.625rem;
+    justify-content: center;
+}
+
+.about .awards .gallery .first {
+    grid-area: a;
+    display: grid;
+    row-gap: 0.625rem;
+}
+
+.about .awards .gallery .second {
+    grid-area: b;
+    display: grid;
+    row-gap: 0.625rem;
+}
+
+.about .awards .gallery .third {
+    grid-area: c;
+    display: grid;
+    row-gap: 0.625rem;
+}
+
+.about .awards .gallery .third .fourth {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 0.625rem;
+}
+
+.about .awards .gallery .first img, .about .awards .gallery .second img {
+    width: 100%;
+    max-width: 16.25rem;
+}
+
+.about .awards .gallery .third img {
+    width: 100%;
+    max-width: 33.25rem;
+}
+
+.about .awards .abutton {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 5rem;
+}
+
+@media screen and (min-width: 600px) {
+    .about .team .teambg {
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .about .history {
+        padding: 3.125rem 0 4.375rem;
+    }
+
+    .about .mission {
+        display: grid;
+        row-gap: 1.875rem;
+        padding: 3.125rem 0;
+    }
+
+    .about .mission .mrow, .about .mission .mrow:nth-child(2) {
+        display: grid;
+        grid-template-columns: repeat(3, 22rem);
+        column-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about .mission .mrow h3,  .about .mission .mrow p {
+        padding: 0;
+    }
+
+    .about .mission .mrow h3 {
+        font-size: 1.25rem;
+    }
+    
+    .about .mission .mrow div img {
+        padding: 0;
+    }
+    
+    .about .team h3 {
+        padding-top: 3.125rem;
+        text-align: center;
+    }
+    
+    .about .team p {
+        padding: 1.875rem 0rem;
+        text-align: justify;
+    }
+    
+    .about .team .teambg {
+        height: 22rem;
+    }
+    
+    .about .team .teambg .teambutton {
+        margin-top: 15rem;
+    }
+    
+    .about .awards h3 {
+        padding: 4.375rem 0 1.875rem;
+        text-align: center;
+    }
+
+    .about .awards .acontent {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about .awards .acontent div:first-of-type {
+        padding: 0;
+        max-width: 43rem;
+        line-height: 1.5rem;
+    }
+    
+    .about .awards .gallery {
+        padding: 0;
+        grid-template-areas: "a b c";
+        column-gap: 1rem;
+        justify-content: center;
+    }
+    
+    .about .awards .gallery .first, .about .awards .gallery .second, .about .awards .gallery .third {
+        display: grid;
+        row-gap: 1rem
+    }
+    
+    .about .awards .gallery .third .fourth {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 1rem;
+    }
+    
+    .about .awards .abutton {
+        padding: 1.25rem 0 5rem;
+    }
+}
