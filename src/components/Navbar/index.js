@@ -17,6 +17,7 @@ function Navbar(){
             <div className="pagecolumn">
                 <Link to="/sobre-nos">Sobre nós</Link>
                 <Link to="/projetos">Projetos</Link>
+                <Link to="/cores-femininas">Cores Femininas</Link>
                 <Link to="/como-ajudar">Como ajudar</Link>
                 <Link to="/contato">Contato</Link>
                 <Link to="/na-media">Na mídia</Link>
